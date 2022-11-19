@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Lato', sans-serif;
+}
+ul{
+  list-style: none;
+}
+ul li{
+  padding: 20px;
+  font-size: 0.9rem;
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+ul li:hover{
+  background-color: white;
+  color: black;
+}
+.part1 img{
+  width: 100px;
+}
+.part1 h2{
+  font-size: 1.5rem;
+}
+.aside{
+  width: 20%;
+  background-color: #a43e4c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+i{
+  border: 1px solid gray;
+  padding: 7px; 
+  color: white;
+  background-color: gray;
+}
+i:hover{
+  background-color: white;
+  color: black;
+}
+.main{
+  width: 100%;
+  display: flex;
+  padding: 15px;
+}
+.homepage{
+  width: 80%;
+  background-image: url(blur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  color: white;
+}
+.section1 img
+{
+  width: 400px; 
+  border-radius: 10px;
+  border: 5px solid white;
+}
+.section2 img{
+  width: 400px; 
+  border-radius: 10px;
+}
+.section1,.section2{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.title{
+  text-align: center;
+  margin-bottom: 25px;
+}
+.title p{
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.sec1 h2 ,.sec2 h2{
+  margin: 20px 0;
+} 
+.sec1 p,.sec2 p{
+  line-height: 1.4;
+}
+.section2 button,.section1 button{
+  padding: 10px;
+  margin-top: 15px;
+}
+
+
+
+
+@media screen and (max-width: 1140px) {
+  .aside{
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+  }
+  ul li{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+  }
+  .homepage{
+    width: 100%;
+  }
+  .main{
+    flex-direction: column;
+  }
+  .section1,.section2{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .homepage img{
+    width: 70%;
+  }
+  .section2 button{
+    margin-bottom: 10px;
+  }
+}
+
